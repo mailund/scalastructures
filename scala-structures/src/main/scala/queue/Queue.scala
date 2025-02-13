@@ -1,3 +1,5 @@
+package queue
+
 trait Queue[T] {
   def isEmpty: Boolean
   def enqueue(t: T): Queue[T]
