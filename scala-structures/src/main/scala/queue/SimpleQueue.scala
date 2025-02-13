@@ -14,5 +14,5 @@ class SimpleQueue[T](private val elements: List[T]) extends Queue[T] {
 }
 
 object SimpleQueue extends QueueCompanion[SimpleQueue] {
-  override def empty[T]: SimpleQueue[T] = new SimpleQueue[T](List.empty)
+  override def empty[T]: SimpleQueue[T] = new SimpleQueue[T](Nil)
 }

@@ -2,7 +2,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
 trait QueueSpec extends AnyFlatSpec with Matchers {
-  def createQueue[T]: Queue[T]
+  def createQueue[T]: queue.Queue[T]
 
   "A Queue" should "be empty when created" in {
     val queue = createQueue[Int]
