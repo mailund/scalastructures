@@ -1,0 +1,95 @@
+file://<WORKSPACE>/Main.scala
+### scala.reflect.internal.FatalError: 
+  bad constant pool index: 0 at pos: 49842
+     while compiling: <no file>
+        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
+     library version: version 2.13.8
+    compiler version: version 2.13.8
+  reconstructed args: -classpath <WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/test-classes-Metals-Cery3yk8RU-QOPfGwE5Dfg==:<HOME>/Library/Caches/bloop/semanticdb/com.sourcegraph.semanticdb-javac.0.10.3/semanticdb-javac-0.10.3.jar:<WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/classes-Metals-Cery3yk8RU-QOPfGwE5Dfg==:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar -Xplugin-require:semanticdb -Yrangepos -Ymacro-expand:discard -Ycache-plugin-class-loader:last-modified -Ypresentation-any-thread
+
+  last tree to typer: EmptyTree
+       tree position: <unknown>
+            tree tpe: <notype>
+              symbol: null
+           call site: <none> in <none>
+
+== Source file context for tree position ==
+
+
+
+occurred in the presentation compiler.
+
+presentation compiler configuration:
+Scala version: 2.13.8
+Classpath:
+<WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/test-classes-Metals-Cery3yk8RU-QOPfGwE5Dfg== [exists ], <HOME>/Library/Caches/bloop/semanticdb/com.sourcegraph.semanticdb-javac.0.10.3/semanticdb-javac-0.10.3.jar [exists ], <WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/classes-Metals-Cery3yk8RU-QOPfGwE5Dfg== [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15.jar [exists ], <HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar [exists ]
+Options:
+-Yrangepos -Xplugin-require:semanticdb
+
+
+action parameters:
+offset: 9
+uri: file://<WORKSPACE>/Main.scala
+text:
+```scala
+object Ma@@
+
+```
+
+
+
+#### Error stacktrace:
+
+```
+scala.reflect.internal.Reporting.abort(Reporting.scala:69)
+	scala.reflect.internal.Reporting.abort$(Reporting.scala:65)
+	scala.reflect.internal.SymbolTable.abort(SymbolTable.scala:28)
+	scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.errorBadIndex(ClassfileParser.scala:407)
+	scala.tools.nsc.symtab.classfile.ClassfileParser$ConstantPool.getExternalName(ClassfileParser.scala:262)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.readParamNames$1(ClassfileParser.scala:853)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttribute$1(ClassfileParser.scala:859)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parseAttributes$6(ClassfileParser.scala:936)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.parseAttributes(ClassfileParser.scala:936)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.parseMethod(ClassfileParser.scala:635)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.parseClass(ClassfileParser.scala:548)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$2(ClassfileParser.scala:174)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.$anonfun$parse$1(ClassfileParser.scala:159)
+	scala.tools.nsc.symtab.classfile.ClassfileParser.parse(ClassfileParser.scala:142)
+	scala.tools.nsc.symtab.SymbolLoaders$ClassfileLoader.doComplete(SymbolLoaders.scala:342)
+	scala.tools.nsc.symtab.SymbolLoaders$SymbolLoader.$anonfun$complete$2(SymbolLoaders.scala:249)
+	scala.tools.nsc.symtab.SymbolLoaders$SymbolLoader.complete(SymbolLoaders.scala:247)
+	scala.reflect.internal.Symbols$Symbol.completeInfo(Symbols.scala:1561)
+	scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1533)
+	scala.reflect.internal.Definitions.scala$reflect$internal$Definitions$$enterNewMethod(Definitions.scala:47)
+	scala.reflect.internal.Definitions$DefinitionsClass.String_$plus$lzycompute(Definitions.scala:1256)
+	scala.reflect.internal.Definitions$DefinitionsClass.String_$plus(Definitions.scala:1256)
+	scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods$lzycompute(Definitions.scala:1577)
+	scala.reflect.internal.Definitions$DefinitionsClass.syntheticCoreMethods(Definitions.scala:1559)
+	scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode$lzycompute(Definitions.scala:1590)
+	scala.reflect.internal.Definitions$DefinitionsClass.symbolsNotPresentInBytecode(Definitions.scala:1590)
+	scala.reflect.internal.Definitions$DefinitionsClass.init(Definitions.scala:1646)
+	scala.tools.nsc.Global$Run.<init>(Global.scala:1226)
+	scala.tools.nsc.interactive.Global$TyperRun.<init>(Global.scala:1331)
+	scala.tools.nsc.interactive.Global.newTyperRun(Global.scala:1354)
+	scala.tools.nsc.interactive.Global.<init>(Global.scala:294)
+	scala.meta.internal.pc.MetalsGlobal.<init>(MetalsGlobal.scala:42)
+	scala.meta.internal.pc.ScalaPresentationCompiler.newCompiler(ScalaPresentationCompiler.scala:514)
+```
+#### Short summary: 
+
+scala.reflect.internal.FatalError: 
+  bad constant pool index: 0 at pos: 49842
+     while compiling: <no file>
+        during phase: globalPhase=<no phase>, enteringPhase=<some phase>
+     library version: version 2.13.8
+    compiler version: version 2.13.8
+  reconstructed args: -classpath <WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/test-classes-Metals-Cery3yk8RU-QOPfGwE5Dfg==:<HOME>/Library/Caches/bloop/semanticdb/com.sourcegraph.semanticdb-javac.0.10.3/semanticdb-javac-0.10.3.jar:<WORKSPACE>/.bloop/scala-structures/bloop-bsp-clients-classes/classes-Metals-Cery3yk8RU-QOPfGwE5Dfg==:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.13/3.2.15/scalatest_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-core_2.13/3.2.15/scalatest-core_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-featurespec_2.13/3.2.15/scalatest-featurespec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-flatspec_2.13/3.2.15/scalatest-flatspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-freespec_2.13/3.2.15/scalatest-freespec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funsuite_2.13/3.2.15/scalatest-funsuite_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-funspec_2.13/3.2.15/scalatest-funspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-propspec_2.13/3.2.15/scalatest-propspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-refspec_2.13/3.2.15/scalatest-refspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-wordspec_2.13/3.2.15/scalatest-wordspec_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-diagrams_2.13/3.2.15/scalatest-diagrams_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-matchers-core_2.13/3.2.15/scalatest-matchers-core_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-shouldmatchers_2.13/3.2.15/scalatest-shouldmatchers_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-mustmatchers_2.13/3.2.15/scalatest-mustmatchers_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.10/scala-reflect-2.13.10.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest-compatible/3.2.15/scalatest-compatible-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.13/3.2.15/scalactic_2.13-3.2.15.jar:<HOME>/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.13/2.1.0/scala-xml_2.13-2.1.0.jar -Xplugin-require:semanticdb -Yrangepos -Ymacro-expand:discard -Ycache-plugin-class-loader:last-modified -Ypresentation-any-thread
+
+  last tree to typer: EmptyTree
+       tree position: <unknown>
+            tree tpe: <notype>
+              symbol: null
+           call site: <none> in <none>
+
+== Source file context for tree position ==
+
