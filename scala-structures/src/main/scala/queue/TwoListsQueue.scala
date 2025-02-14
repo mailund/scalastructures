@@ -11,7 +11,7 @@ class TwoListsQueue[T](private val front: List[T], back: List[T])
 
   override def enqueue(t: T): Queue[T] =
     new TwoListsQueue[T](front, t :: back).rebalance
-  override def top(): Option[T] = front.headOption
+  override def top(): T = front.head
   override def dequeue(): Queue[T] =
     new TwoListsQueue[T](front.tail, back).rebalance
   override def size: Int = front.size + back.size

@@ -8,7 +8,7 @@ class SimpleQueue[T](private val elements: List[T]) extends Queue[T] {
   // to add an element to the end. This is what makes the simple queue simple,
   // and a little unattractive for large queues.
   override def enqueue(t: T): Queue[T] = new SimpleQueue[T](elements :+ t)
-  override def top(): Option[T] = elements.headOption
+  override def top(): T = elements.head
   override def dequeue(): Queue[T] = new SimpleQueue[T](elements.tail)
   override def size: Int = elements.size
 }
