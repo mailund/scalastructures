@@ -1,8 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.EnumListSpec, org.scalatest.tools.Framework$$anon$1@3c1467a8, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@3c1467a8, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@3c1467a8, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@3c1467a8, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mTwoListsQueueSpec:[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@11c5fb7, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@11c5fb7, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.LazyListSpec, org.scalatest.tools.Framework$$anon$1@11c5fb7, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.EnumListSpec, org.scalatest.tools.Framework$$anon$1@11c5fb7, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@11c5fb7, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLazyListSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create an empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using prepend[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSimpleQueueSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
@@ -20,18 +27,19 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mSimpleQueueSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTwoListsQueueSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow dequeueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct size[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 169 milliseconds.[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 18[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 18, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 202 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 23[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 5, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 23, failed 0, canceled 0, ignored 0, pending 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	list.LazyListSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	SimpleQueueSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	list.SimpleListSpec[0m
 [0m[[0m[0mdebug[0m] [0m[0m	list.EnumListSpec[0m

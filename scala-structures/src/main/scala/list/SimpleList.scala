@@ -9,6 +9,8 @@ class SimpleList[+T](private val elements: ScalaList[T]) extends List[T] {
   override def tail: List[T] = new SimpleList[T](elements.tail)
   override def prepend[U >: T](h: U): List[U] = new SimpleList[U](h :: elements)
   override def append[U >: T](t: U): List[U] = new SimpleList[U](elements :+ t)
+
+  override def reverse: List[T] = new SimpleList[T](elements.reverse)
 }
 
 object SimpleList extends ListCompanion[SimpleList] {

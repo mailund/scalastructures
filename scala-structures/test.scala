@@ -26,13 +26,6 @@ class Cons[+T](h: T, _tailThunk: => MyLazyList[T]) extends MyLazyList[T]:
   def append[U >: T](elem: U): MyLazyList[U] =
     Cons(h, tail.append(elem))
 
-  // Manually define equals and hashCode to match case class behavior
-  override def equals(obj: Any): Boolean = obj match
-    case cons: Cons[T @unchecked] => head == cons.head && tail == cons.tail
-    case _                        => false
-
-  override def hashCode(): Int = 31 * head.hashCode() + tail.hashCode()
-
 object Cons:
   def apply[T](h: T, _tailThunk: => MyLazyList[T]): Cons[T] =
     new Cons(h, _tailThunk)

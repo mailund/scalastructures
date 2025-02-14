@@ -1,7 +1,8 @@
 #Successful Tests
-#Fri Feb 14 07:38:50 CET 2025
+#Fri Feb 14 12:11:09 CET 2025
 MainSpec=1739475363296
-SimpleQueueSpec=1739515130866
-TwoListsQueueSpec=1739515130866
-list.EnumListSpec=1739515130866
-list.SimpleListSpec=1739515130866
+SimpleQueueSpec=1739531469558
+TwoListsQueueSpec=1739531469561
+list.EnumListSpec=1739531469560
+list.LazyListSpec=1739531469552
+list.SimpleListSpec=1739531469559

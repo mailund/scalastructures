@@ -38,4 +38,18 @@ trait ListSpec extends AnyFlatSpec with Matchers {
     list.head shouldBe 10
     list.tail.head shouldBe 20
   }
+
+  it should "return an empty list when reverse is called on an empty list" in {
+    val list = createList[Int]
+    list.reverse.isEmpty shouldBe true
+  }
+
+  it should "reverse the order of a non-empty list created by appending elements" in {
+    val list = createList[Int].append(1).append(2).append(3)
+    val reversed = list.reverse
+    reversed.head shouldBe 3
+    reversed.tail.head shouldBe 2
+    reversed.tail.tail.head shouldBe 1
+    reversed.tail.tail.tail.isEmpty shouldBe true
+  }
 }

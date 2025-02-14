@@ -1,1 +1,1 @@
-["SimpleQueueSpec","list.SimpleListSpec","list.EnumListSpec","TwoListsQueueSpec"]
+["list.LazyListSpec","SimpleQueueSpec","list.SimpleListSpec","list.EnumListSpec","TwoListsQueueSpec"]

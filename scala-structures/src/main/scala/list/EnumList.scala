@@ -23,6 +23,12 @@ enum EnumList[+T] extends List[T]:
     case Empty         => Cons(elem, Empty)
     case Cons(h, tail) => Cons(h, tail.append(elem))
 
+  private def rev[U >: T](acc: EnumList[U]): EnumList[U] = this match
+    case Empty         => acc
+    case Cons(h, tail) => tail.rev(Cons(h, acc))
+
+  val reverse = rev(Empty)
+
 object EnumList extends ListCompanion[EnumList] {
   override def empty[T]: EnumList[T] = Empty
 }
