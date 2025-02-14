@@ -2,7 +2,7 @@ package list
 
 enum LazyList[+T] extends List[T]:
   case Empty
-  case Cons(h: T, t: LazyList[T])
+  case Cons(h: T, lazy val t: LazyList[T])
 
   def isEmpty: Boolean = this match
     case Empty => true
