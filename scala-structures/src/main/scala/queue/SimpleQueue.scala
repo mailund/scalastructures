@@ -1,13 +1,14 @@
 package queue
 
-class SimpleQueue[T](private val elements: List[T]) extends Queue[T] {
+class SimpleQueue[+T](private val elements: List[T]) extends Queue[T] {
 
   override def isEmpty: Boolean = elements.isEmpty
 
   // For linked lists, this is O(n) because we have to traverse the entire list
   // to add an element to the end. This is what makes the simple queue simple,
   // and a little unattractive for large queues.
-  override def enqueue(t: T): Queue[T] = new SimpleQueue[T](elements :+ t)
+  override def enqueue[U >: T](u: U): Queue[U] =
+    new SimpleQueue[U](elements :+ u)
   override def top(): T = elements.head
   override def dequeue(): Queue[T] = new SimpleQueue[T](elements.tail)
   override def size: Int = elements.size

@@ -1,6 +1,6 @@
 package queue
 
-class TwoListsQueue[T](private val front: List[T], back: List[T])
+class TwoListsQueue[+T](private val front: List[T], back: List[T])
     extends Queue[T] {
 
   private def rebalance: TwoListsQueue[T] = front match
@@ -9,8 +9,8 @@ class TwoListsQueue[T](private val front: List[T], back: List[T])
 
   override def isEmpty: Boolean = front.isEmpty && back.isEmpty
 
-  override def enqueue(t: T): Queue[T] =
-    new TwoListsQueue[T](front, t :: back).rebalance
+  override def enqueue[U >: T](u: U): Queue[U] =
+    new TwoListsQueue[U](front, u :: back).rebalance
   override def top(): T = front.head
   override def dequeue(): Queue[T] =
     new TwoListsQueue[T](front.tail, back).rebalance
