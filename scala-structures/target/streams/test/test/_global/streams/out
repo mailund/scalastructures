@@ -1,25 +1,25 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@4e3d1262, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@4e3d1262, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@4e3d1262, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@605e4603, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@605e4603, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@605e4603, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mSimpleListSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create an empty list[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using prepend[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mTwoListsQueueSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow dequeueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct size[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mSimpleQueueSpec:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should allow dequeueing elements[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct size[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 181 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 157 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 13[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 3, aborted 0[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 13, failed 0, canceled 0, ignored 0, pending 0[0m[0m
