@@ -4,3 +4,5 @@ target
 .scala-build
 project/project
 project/target/
+target/streams
+target/test-reports
