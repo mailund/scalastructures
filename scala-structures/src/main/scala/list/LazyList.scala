@@ -1,7 +1,9 @@
 package list
 
-sealed abstract class LazyList[+T] extends List[T]:
+case object Empty extends LazyList[Nothing]
+case class Cons[+T](h: T, t: LazyList[T]) extends LazyList[T]
 
+sealed abstract class LazyList[+T] extends List[T]:
   def isEmpty = this match
     case Empty => true
     case _     => false
@@ -26,9 +28,6 @@ sealed abstract class LazyList[+T] extends List[T]:
     case Cons(h, t) => t.rev(Cons(h, acc))
 
   def reverse: LazyList[T] = rev(Empty)
-
-case object Empty extends LazyList[Nothing]
-case class Cons[+T](h: T, t: LazyList[T]) extends LazyList[T]
 
 object LazyList extends ListCompanion[LazyList] {
   override def empty[T]: LazyList[T] = Empty
