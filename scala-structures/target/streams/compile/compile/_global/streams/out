@@ -1,5 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/mailund/Code/scalastructures/scala-structures/src/main/scala/list/LazyList.scala:5:27 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m  [33mcase[0m Cons(h: T, [33mlazy[0m [33mval[0m t: LazyList[T])[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                           ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m                           parameter may not be `lazy`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- Error: /Users/mailund/Code/scalastructures/scala-structures/src/main/scala/list/LazyList.scala:8:18 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m8 |[0m  [33mcase[0m Cons(h: T, t: Lazy[Node[T]])[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m                  ^^^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mcovariant [33mtype[0m [35mT[0m occurs in invariant position in type list.Lazy[list.Node[T]] of [33mvalue[0m [35mt[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[33menum[0m [33mcase[0m Cons requires explicit declaration of [33mtype[0m [35mT[0m to resolve this issue.[0m
+[0m[[0m[31merror[0m] [0m[0m[31m  |[0mSee an example at https://docs.scala-lang.org/scala3/reference/enums/adts.html#parameter-variance-of-enums[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
