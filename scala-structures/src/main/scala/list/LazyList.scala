@@ -1,11 +1,6 @@
 package list
 
-private class Lazy[+T](expr: => T):
-  lazy val value: T = expr
-
-enum LazyList[+T] extends List[T]:
-  case Empty
-  case Cons(h: T, t: Lazy[LazyList[T]])
+sealed abstract class LazyList[+T] extends List[T]:
 
   def isEmpty = this match
     case Empty => true
@@ -16,22 +11,25 @@ enum LazyList[+T] extends List[T]:
     case Empty      => throw new NoSuchElementException("head of empty list")
 
   def tail: LazyList[T] = this match
-    case Cons(_, t) => t.value
+    case Cons(_, t) => t
     case Empty => throw new UnsupportedOperationException("tail of empty list")
 
   def prepend[U >: T](elem: U): LazyList[U] =
-    Cons(elem, Lazy(this))
+    Cons(elem, this)
 
   def append[U >: T](elem: U): LazyList[U] = this match
-    case Empty         => Cons(elem, Lazy(Empty))
-    case Cons(h, tail) => Cons(h, Lazy(tail.value.append(elem)))
+    case Empty         => Cons(elem, Empty)
+    case Cons(h, tail) => Cons(h, tail.append(elem))
 
   def rev[U >: T](acc: LazyList[U]): LazyList[U] = this match
-    case Empty         => acc
-    case Cons(h, tail) => tail.value.rev(Cons(h, Lazy(acc)))
+    case Empty      => acc
+    case Cons(h, t) => t.rev(Cons(h, acc))
 
   def reverse: LazyList[T] = rev(Empty)
 
+case object Empty extends LazyList[Nothing]
+case class Cons[+T](h: T, t: LazyList[T]) extends LazyList[T]
+
 object LazyList extends ListCompanion[LazyList] {
-  override def empty[T]: LazyList[T] = LazyList.Empty
+  override def empty[T]: LazyList[T] = Empty
 }
