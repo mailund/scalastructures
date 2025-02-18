@@ -1,33 +1,59 @@
-[debug] Running TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@2fef56fc, false, [SuiteSelector])
-[debug] Running TaskDef(list.LazyListSpec, org.scalatest.tools.Framework$$anon$1@2fef56fc, false, [SuiteSelector])
-[debug] Running TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@2fef56fc, false, [SuiteSelector])
-[debug] Running TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@2fef56fc, false, [SuiteSelector])
-[debug] Running TaskDef(list.EnumListSpec, org.scalatest.tools.Framework$$anon$1@2fef56fc, false, [SuiteSelector])
-[info] SimpleListSpec:
-[info] - should create an empty list
-[info] - should add an element using prepend
-[info] - should add an element using append
-[info] - should maintain order with multiple prepends
-[info] - should maintain order with multiple appends
-[info] - should return an empty list when reverse is called on an empty list
-[info] - should reverse the order of a non-empty list created by appending elements
-[info] SimpleQueueSpec:
-[info] A Queue
-[info] - should be empty when created
-[info] - should allow enqueueing elements
-[info] - should allow dequeueing elements
-[info] - should return the correct size
-[info] LazyListSpec:
-[info] - should create an empty list
-[info] - should add an element using prepend
-[info] - should add an element using append
-[info] - should maintain order with multiple prepends
-[info] - should maintain order with multiple appends
-[info] - should return an empty list when reverse is called on an empty list
-[info] - should reverse the order of a non-empty list created by appending elements
-[info] TwoListsQueueSpec:
-[info] A Queue
-[info] - should be empty when created
-[info] - should allow enqueueing elements
-[info] - should allow dequeueing elements
-[info] - should return the correct size
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.EnumListSpec, org.scalatest.tools.Framework$$anon$1@47bddf82, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SimpleQueueSpec, org.scalatest.tools.Framework$$anon$1@47bddf82, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.LazyListSpec, org.scalatest.tools.Framework$$anon$1@47bddf82, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(list.SimpleListSpec, org.scalatest.tools.Framework$$anon$1@47bddf82, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(TwoListsQueueSpec, org.scalatest.tools.Framework$$anon$1@47bddf82, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSimpleQueueSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEnumListSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31mlist.EnumListSpec *** ABORTED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  java.lang.ExceptionInInitializerError:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumListSpec.createList(EnumListSpec.scala:6)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.ListSpec.testFun$proxy1$1(ListSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.ListSpec.$init$$$anonfun$1(ListSpec.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1717)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Cause: scala.MatchError: Empty (of class list.EnumList$$anon$1)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow dequeueing elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumList.rev(EnumList.scala:28)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumList.<init>(EnumList.scala:30)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumList$$anon$1.<init>(EnumList.scala:4)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumList$.<clinit>(EnumList.scala:4)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.EnumListSpec.createList(EnumListSpec.scala:6)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.ListSpec.testFun$proxy1$1(ListSpec.scala:10)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at list.ListSpec.$init$$$anonfun$1(ListSpec.scala:9)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct size[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTwoListsQueueSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mA Queue[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should be empty when created[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSimpleListSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create an empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using prepend[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list when reverse is called on an empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow enqueueing elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reverse the order of a non-empty list created by appending elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should allow dequeueing elements[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return the correct size[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLazyListSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create an empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using prepend[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add an element using append[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple prepends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should maintain order with multiple appends[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return an empty list when reverse is called on an empty list[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should reverse the order of a non-empty list created by appending elements[0m[0m
