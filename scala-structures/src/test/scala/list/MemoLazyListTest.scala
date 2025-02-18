@@ -5,17 +5,19 @@ import org.scalatest.matchers.should.Matchers
 
 class MemoLazyListTest extends AnyFlatSpec with Matchers {
 
+  import MemoLazyList.*
+
   // Infinite list of integers starting from n.
-  def count(n: Int): MemoLazyList[Int] = MCons(n, LazyVal(count(n + 1)))
+  def count(n: Int): MemoLazyList[Int] = Cons(n, LazyVal(count(n + 1)))
 
   def take[T](list: MemoLazyList[T], n: Int): MemoLazyList[T] =
     def take_[T](
         acc: MemoLazyList[T]
     )(list: MemoLazyList[T], n: Int): MemoLazyList[T] =
       (n, list) match
-        case (0, _) | (_, MEmpty) => acc
-        case (_, MCons(h, t)) => take_(MCons(h, LazyVal(acc)))(t.value, n - 1)
-    take_(MEmpty)(list, n).reverse
+        case (0, _) | (_, Empty) => acc
+        case (_, Cons(h, t))     => take_(Cons(h, LazyVal(acc)))(t.value, n - 1)
+    take_(Empty)(list, n).reverse
 
   it should "take the first n elements" in {
     val list = count(1)

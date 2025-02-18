@@ -3,34 +3,34 @@ package list
 class LazyVal[+T](_value: => T) {
   lazy val value: T = _value
 }
-case object MEmpty extends MemoLazyList[Nothing]
-case class MCons[+T](h: T, t: LazyVal[MemoLazyList[T]]) extends MemoLazyList[T]
+enum MemoLazyList[+T] extends List[T]:
+  case Empty
+  case Cons(h: T, t: LazyVal[MemoLazyList[T]])
 
-sealed abstract class MemoLazyList[+T] extends List[T]:
   def isEmpty = this match
-    case MEmpty => true
-    case _      => false
+    case Empty => true
+    case _     => false
 
   def head: T = this match
-    case MCons(h, _) => h
-    case MEmpty      => throw new NoSuchElementException("head of empty list")
+    case Cons(h, _) => h
+    case Empty      => throw new NoSuchElementException("head of empty list")
 
   def tail: MemoLazyList[T] = this match
-    case MCons(_, t) => t.value
-    case MEmpty => throw new UnsupportedOperationException("tail of empty list")
+    case Cons(_, t) => t.value
+    case Empty => throw new UnsupportedOperationException("tail of empty list")
 
-  def prepend[U >: T](elem: U): MemoLazyList[U] = MCons(elem, LazyVal(this))
+  def prepend[U >: T](elem: U): MemoLazyList[U] = Cons(elem, LazyVal(this))
 
   def append[U >: T](elem: U): MemoLazyList[U] = this match
-    case MEmpty         => MCons(elem, LazyVal(MEmpty))
-    case MCons(h, tail) => MCons(h, LazyVal(tail.value.append(elem)))
+    case Empty         => Cons(elem, LazyVal(Empty))
+    case Cons(h, tail) => Cons(h, LazyVal(tail.value.append(elem)))
 
   def rev[U >: T](acc: MemoLazyList[U]): MemoLazyList[U] = this match
-    case MEmpty      => acc
-    case MCons(h, t) => t.value.rev(MCons(h, LazyVal(acc)))
+    case Empty      => acc
+    case Cons(h, t) => t.value.rev(Cons(h, LazyVal(acc)))
 
-  def reverse: MemoLazyList[T] = rev(MEmpty)
+  def reverse: MemoLazyList[T] = rev(Empty)
 
 object MemoLazyList extends ListCompanion[MemoLazyList] {
-  override def empty[T]: MemoLazyList[T] = MEmpty
+  override def empty[T]: MemoLazyList[T] = Empty
 }
