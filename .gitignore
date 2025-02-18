@@ -3,3 +3,6 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+scala-structures/target/scala-3.6.3/classes/list/EnumList.tasty
+scala-structures/target/scala-3.6.3/test-zinc/inc_compile_3.zip
+scala-structures/target/scala-3.6.3/zinc/inc_compile_3.zip
