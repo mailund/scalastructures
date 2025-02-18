@@ -3,3 +3,4 @@ target
 .metals
 .scala-build
 project/project
+project/target/
