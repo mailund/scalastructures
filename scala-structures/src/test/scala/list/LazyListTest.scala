@@ -5,6 +5,8 @@ import org.scalatest.matchers.should.Matchers
 
 class LazyListTest extends AnyFlatSpec with Matchers {
 
+  import LazyList.*
+
   // Infinite list of integers starting from n.
   def count(n: Int): LazyList[Int] = Cons(n, () => count(n + 1))
 

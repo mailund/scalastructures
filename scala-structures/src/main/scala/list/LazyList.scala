@@ -1,9 +1,9 @@
 package list
 
-case object Empty extends LazyList[Nothing]
-case class Cons[+T](h: T, t: () => LazyList[T]) extends LazyList[T]
+enum LazyList[+T] extends List[T]:
+  case Empty
+  case Cons(h: T, t: () => LazyList[T])
 
-sealed abstract class LazyList[+T] extends List[T]:
   def isEmpty = this match
     case Empty => true
     case _     => false
